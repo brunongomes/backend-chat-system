@@ -11,8 +11,8 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use('/auth', authRoutes);
-app.use('/chat', chatRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Database connection
 connectDB();

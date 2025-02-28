@@ -8,12 +8,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors({
-    origin: '*',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['*']
-  }));
+app.use(cors());
 
 // Routes
 app.use('/api/auth', authRoutes);

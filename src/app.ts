@@ -9,10 +9,10 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: 'https://frontend-chat-system.vercel.app', // Domínio do frontend deployado
+    origin: '*',
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['*']
   }));
 
 // Routes
